@@ -2,6 +2,8 @@
 
 ![Design preview for the NFT preview card component coding challenge](./design/desktop-preview.jpg)
 
+ My solution:
+ ![Minha solução](./images/Capturar.PNG)
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.

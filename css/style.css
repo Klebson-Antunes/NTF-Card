@@ -1,0 +1,141 @@
+/*cores*/
+:root {
+    --primary-blue: hsl(215, 51%, 70%);
+    --primary-cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    color: var(--White);
+    background: #0d1a2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* conteudo*/
+main {
+    min-width: 255px;
+    width: 320px;
+    height: 490px;
+    background: var(--main-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: inset 0px 8px 25px var(--card-bg);
+}
+
+/*card*/
+.card {
+    width: 250px;
+    background: var(--card-bg);
+    height: 430px;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 4px var(--main-bg);
+}
+.imagem{
+    margin: 0;
+    border-radius: 0.5rem;
+    height: auto;
+    position: relative;
+}
+.imagem img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.filtro {
+    transition: 1s ease-in-out;
+    border-radius: 0.5rem;
+}
+.imagem:hover .filtro {
+ position: absolute;
+ top: 0;
+ background-color: rgba(0,255,255,0.3);
+ width: 100%;
+ height: 210px;
+ cursor: pointer;
+}
+
+.informacao {
+    margin-top: 1rem;
+}
+
+.informacao h1 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+.informacao p {
+    font-size: 0.8rem;
+    color: var(--primary-blue);
+    margin-top: 1rem;
+}
+
+.valor {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line);
+}
+.valor figure {
+    display: flex;
+    height: auto;
+    align-items: center;
+    gap: 5px;
+}
+.figure-ethereum img {
+    width: 10px;
+    height: 15px;
+}
+.figure-ethereum figcaption {
+    color: var(--primary-cyan);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 400;
+    
+}
+.figure-clock img{
+    width: 17px;
+    height: 17px;
+}
+.figure-clock figcaption{
+    color: var(--primary-blue);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+#footer {
+     
+     height: auto;
+     margin-top: 15px;
+}
+#footer figure {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+#footer figure img{
+    width: 30px;
+}
+#footer figure figcaption {
+    font-size: 0.7rem;
+    color: var(--primary-blue);
+}
+#footer figure figcaption span {
+    color: var(--White);
+}
